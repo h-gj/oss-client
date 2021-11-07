@@ -1,0 +1,17 @@
+.file-item-container {
+  width: "50px" !important;
+  text-align: "center";
+  display: "flex";
+  flex-direction: "column"; 
+  align-items: "center";
+
+  
+
+}
+
+.title-wrapper {
+  overflow: "hidden";
+  text-overflow: "ellipsis";
+  white-space: "nowrap";
+  width: "100px";
+}

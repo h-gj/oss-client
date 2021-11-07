@@ -1,6 +1,6 @@
 import oss2
 
-from api.settings import OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET
+from api.settings import OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET, OSS_BUCKET_NAME, OSS_BUCKET_ENDPOINT
 
 
 def singleton(class_):
@@ -40,8 +40,8 @@ def get_bucket(oss_auth=None,
 
     return OssBucket(
         oss_auth,
-        endpoint=endpoint or 'https://oss-cn-hongkong.aliyuncs.com',
-        bucket_name=bucket_name or 'hugj',
+        endpoint=endpoint or OSS_BUCKET_ENDPOINT,
+        bucket_name=bucket_name or OSS_BUCKET_NAME,
     )
 
 

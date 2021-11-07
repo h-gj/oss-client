@@ -20,7 +20,7 @@ Backend: Flask
 git pull
 cd api/
 pip install -r req.txt
-export FLASK_APP=index.py [On Mac/Linux] ``OR`` set FLASK_APP=index.py [On Windows]
+export FLASK_APP=index.py [On Mac/Linux] OR set FLASK_APP=index.py [On Windows]
 ```
 
 
@@ -46,6 +46,6 @@ Replace the 'xxx' with your real value.
 ```shell
 cd ui/
 npm i
-vim src/config.js  // edit `baseUrl` point to your local backend server, ie: 'http://localhost:5000'.
+vim src/config.js  // edit `baseUrl` to point to your local backend server, ie: 'http://localhost:5000'.
 npm start
 ```

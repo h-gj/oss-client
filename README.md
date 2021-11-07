@@ -18,9 +18,8 @@ Backend: Flask
 
 ```shell
 git pull
-cd api/
-pip install -r req.txt
-export FLASK_APP=index.py [On Mac/Linux] OR set FLASK_APP=index.py [On Windows]
+pip install -r api/req.txt
+export FLASK_APP=api/index.py [On Mac/Linux] OR set FLASK_APP=api/index.py [On Windows]
 ```
 
 
@@ -33,6 +32,8 @@ Past the following two lines into it:
 ```Python
 OSS_ACCESS_KEY_ID = 'xxx'
 OSS_ACCESS_KEY_SECRET = 'xxx'
+OSS_BUCKET_NAME = 'xxx'
+OSS_BUCKET_ENDPOINT = 'xxx'  #  ie: 'https://oss-cn-hongkong.aliyuncs.com'
 ```
 
 Replace the 'xxx' with your real value.

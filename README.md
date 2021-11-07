@@ -49,3 +49,10 @@ npm i
 vim src/config.js  // edit `baseUrl` to point to your local backend server, ie: 'http://localhost:5000'.
 npm start
 ```
+
+
+
+### Todo
+
+- [ ] Support upload on pasting.
+- [ ] Support multiple files upload in one time.

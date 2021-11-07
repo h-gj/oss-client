@@ -1,4 +1,4 @@
-### A Simple AliYun OSS Client for Saving Your File Stuffs.
+### A Simple AliYun OSS Client For Saving Your File Stuffs.
 
 ### Tech Stack
 Frontend: React

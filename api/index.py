@@ -21,7 +21,7 @@ limiter = Limiter(
 
 
 @app.route("/", methods=['POST', 'GET'])
-@limiter.limit("1 per minute", methods=['POST'])
+@limiter.limit("10 per minute", methods=['POST'])
 def hello_world():
     if request.method == 'POST':
         f = request.files['file']

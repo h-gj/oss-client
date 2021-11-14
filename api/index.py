@@ -1,3 +1,5 @@
+from uuid import uuid4
+
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -22,9 +24,13 @@ limiter = Limiter(
 @limiter.limit("1 per minute", methods=['POST'])
 def hello_world():
     if request.method == 'POST':
-        f = request.files['image']
-        upload_to_oss(f.filename, f)
-        return jsonify({'a': 1})
+        f = request.files['file']
+        filename = f.filename
+        if filename in ('image.png', 'image.jpg', 'image.jpeg'):
+            ext = filename.split('.')[-1]
+            filename = str(uuid4()).replace('-', '') + '.' + ext
+        upload_to_oss(filename, f)
+        return jsonify({"success": True})
 
     files = list_files()
     return jsonify({'files': files})

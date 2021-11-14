@@ -53,7 +53,10 @@ npm start
 
 
 
-### Todo
+### Done
 
-- [ ] Support uploading on pasting.
-- [ ] Support multiple files uploading in one time.
+- [x] Support uploading on pasting.
+- [x] Support multiple files uploading in one time.
+
+
+### Todo

@@ -3,6 +3,7 @@ import DragAndDrop from '../components/DragAndDrop'
 import axios from 'axios'
 import baseUrl from '../config'
 import bg from '../../src/home_cover.jpg'
+import PasteUpload from '../components/PasteUpload'
 
 class Home extends Component {
   constructor(props) {
@@ -35,8 +36,9 @@ state = {
 render() {
     return (
       <div style={{backgroundImage: `url(${bg})`}}>
+      <PasteUpload />
         <DragAndDrop handleDrop={this.handleDrop} handleUploaded={this.onUploaded}>
-        <div style={{height: "100vh", width: "100vw"}}>    
+        <div style={{height: "90vh", width: "100vw"}}>    
           <span style={{right: "50%", bottom: "50%", transform: "translate(50%,50%)", position: "absolute", fontSize: "50px", color: "white", fontFamily: "monospace"}}>
           Drap And Drop
           </span>

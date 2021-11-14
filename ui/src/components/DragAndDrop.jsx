@@ -34,7 +34,7 @@ class DragAndDrop extends Component {
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
       console.log(1111,  e.dataTransfer.files);
       var formData = new FormData();
-      formData.append("image", e.dataTransfer.files[0]);
+      formData.append("file", e.dataTransfer.files[0]);
       axios.post(baseUrl, formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
